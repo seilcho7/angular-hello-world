@@ -49,6 +49,8 @@ export class TestComponent implements OnInit {
     fontStyle: "italic"
   }
 
+  public greeting = "";
+
   public siteUrl = window.location.href;
   constructor() { }
 
@@ -57,6 +59,11 @@ export class TestComponent implements OnInit {
 
   greetUser() {
     return "Hello " + this.name;
+  }
+
+  onClick() {
+    console.log(event);
+    this.greeting = event.type;
   }
 
 }
