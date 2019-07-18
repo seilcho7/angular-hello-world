@@ -51,3 +51,9 @@
     Name is hidden
   </h2>
 </ng-template> -->
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'" [style.color]="color">You picked red color</div>
+  <div *ngSwitchCase="'blue'" [style.color]="color">You picked blue color</div>
+  <div *ngSwitchCase="'green'" [style.color]="color">You picked green color</div>
+  <div *ngSwitchDefault>Pick your color again</div>
+</div>

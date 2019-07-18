@@ -55,6 +55,8 @@ export class TestComponent implements OnInit {
 
   public displayName = true;
 
+  public color ="yellow";
+
   public siteUrl = window.location.href;
   constructor() { }
 
