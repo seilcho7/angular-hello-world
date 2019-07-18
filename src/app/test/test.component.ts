@@ -43,6 +43,12 @@ export class TestComponent implements OnInit {
     "text-special": this.isSpecial
   }
 
+  public highlightColor ="orange";
+  public titleStyles = {
+    color: "blue",
+    fontStyle: "italic"
+  }
+
   public siteUrl = window.location.href;
   constructor() { }
 

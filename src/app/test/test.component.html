@@ -8,3 +8,9 @@
 <!-- property binding -->
 <input [id] = "myId" type="text" value="Seil">
 <input bind-disabled="isDisabled" id ="{{myId}}" type="text" value="Seil">
+
+
+<!-- style binding -->
+<h2 [style.color]="hasError ? 'red' : 'green'">Style Binding 1</h2>
+<h2 [style.color]="highlightColor">Style Binding 2</h2>
+<h2 [ngStyle]="titleStyles">Style Binding 3</h2>
