@@ -1,4 +1,10 @@
-<h2>Hello {{name}}</h2>
+<!-- class binding -->
+<h2 class="text-success">Hello {{name}}</h2>
+<h2 [class]="successClass">Learning Angular</h2>
+<h2 [class.text-danger]="hasError">Learning Angular</h2>
+<h2 [ngClass]="messageClasses">Learning Angular</h2>
+
+
 <!-- property binding -->
 <input [id] = "myId" type="text" value="Seil">
 <input bind-disabled="isDisabled" id ="{{myId}}" type="text" value="Seil">
