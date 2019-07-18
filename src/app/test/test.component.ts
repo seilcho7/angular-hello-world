@@ -51,6 +51,10 @@ export class TestComponent implements OnInit {
 
   public greeting = "";
 
+  public names = "";
+
+  public displayName = true;
+
   public siteUrl = window.location.href;
   constructor() { }
 
