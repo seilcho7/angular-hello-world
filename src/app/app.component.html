@@ -2,8 +2,10 @@
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
+    {{message}}
   </h1>
-  <div app-test></div>
+  <!-- <div app-test></div> -->
 </div>
+<app-test (childEvent)="message=$event" [parentData]="testName"></app-test>
 
 <router-outlet></router-outlet>

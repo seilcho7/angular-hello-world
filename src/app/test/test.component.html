@@ -64,3 +64,8 @@
 <div *ngFor="let color of colors; index as i; first as f; last as l; even as e">
   <h2>first: {{f}} last: {{l}} even: {{e}} {{i}} {{color}}</h2>
 </div>
+
+
+<!-- component interaction -->
+<div>{{"getting data from parent " + seil}}</div>
+<button (click)="fireEvent()">Send Event</button>

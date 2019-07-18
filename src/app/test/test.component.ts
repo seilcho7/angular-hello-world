@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
-  selector: '[app-test]',
+  selector: 'app-test',
   templateUrl: './test.component.html',
   // template: `
   //   <h2>
@@ -29,6 +29,10 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class TestComponent implements OnInit {
+  // @Input() public parentData;
+  @Input('parentData') public seil;
+
+  @Output() public childEvent = new EventEmitter();
 
   public name = "Seil";
   public myId = "testId";
@@ -76,6 +80,10 @@ export class TestComponent implements OnInit {
 
   logMessage(value) {
     console.log(value);
+  }
+
+  fireEvent() {
+    this.childEvent.emit('Sending data');
   }
 
 }
