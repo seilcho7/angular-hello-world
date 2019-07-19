@@ -35,8 +35,14 @@ export class TestComponent implements OnInit {
   @Output() public childEvent = new EventEmitter();
 
   public name = "Seil";
+  public title = "learning angular";
   public myId = "testId";
   public isDisabled = true;
+
+  public person = {
+    "firstName": "Seil",
+    "lastName": "Cho"
+  }
 
   public successClass = "text-success";
   public hasError = true;
@@ -62,6 +68,8 @@ export class TestComponent implements OnInit {
   public color = "yellow";
 
   public colors = ["red", "blue", "green", "yellow"];
+
+  public date = new Date();
 
   public siteUrl = window.location.href;
   constructor() { }
